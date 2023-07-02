@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>People Counting and Tracking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #F9F5F6;
+            color: #143e97;
+        }
+
+        h1 {
+            margin-top: 50px;
+            color: #4F709C;
+        }
+
+        #video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        #video {
+            border: 2px solid #ccc;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        #project-description {
+            margin-top: 30px;
+            color: #1B6B93;
+        }
+
+        .width{
+            width: 50%;
+            margin: auto;
+        }
+
+        input[type=file]{
+            margin: auto;
+            padding-left: 70px;
+        }
+        input[type=submit]{
+            padding: 10px;
+        }
+
+        hr{
+            height: 3px;
+            background-color: #00DFA2;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>PEOPLE COUNTING AND TRACKING SYSTEM</h1>
+
+    <div id="project-description">
+        <h2>About the Project</h2>
+        <div class="width">
+            <p>
+                This web application uses object tracking to detect and track people in a video stream.
+                The application utilizes OpenCV, dlib, and MobileNet SSD to perform real-time object detection
+                and tracking. The tracked objects are displayed on the video stream, and the number of objects
+                moving up and down is counted and shown on the screen. d.	This solution can be implemented in
+                a variety of cases such as in classrooms, theatres, open halls for counting the number of people
+                present there. It can also be used for security surveillance, crowd management, optimize traffic flow, etc.
+            </p>
+        </div>
+    </div>
+    <br><hr><br><br><br>
+
+    <div>
+        <form action="/video" method="post" enctype="multipart/form-data" >
+            <input type="file" name="videoFile" id="videoFile" accept="video/*" required>
+            <br><br>
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+
+</body>
+</html>
