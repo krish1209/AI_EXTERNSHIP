@@ -1,0 +1,12 @@
+numpy
+scipy.spatial
+from collections import OrderedDict
+Flask
+CentroidTracker
+TrackableObject
+VideoStream
+FPS
+time
+cv2
+dlib
+imutils
