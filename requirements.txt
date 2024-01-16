@@ -10,3 +10,5 @@ time
 cv2
 dlib
 imutils
+CUDA
+Tf
